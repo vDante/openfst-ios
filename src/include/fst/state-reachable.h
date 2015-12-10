@@ -98,9 +98,10 @@ class IntervalReachVisitor {
   }
 
   bool BackArc(StateId s, const A &arc) {
+    // Commented these two lines and return true to enable dynamic composition
     //FSTERROR() << "IntervalReachVisitor: cyclic input";
     //error_ = true;
-    return false;
+    return true;
   }
 
   bool ForwardOrCrossArc(StateId s, const A &arc) {
