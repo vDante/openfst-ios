@@ -4,7 +4,7 @@
 set -x
 
 TOOLCHAIN_PREFIX=${1:-/tmp/my-android-toolchain/bin/arm-linux-androideabi}
-INSTALL_PREFIX=${2:/opt/arm-tools}
+INSTALL_PREFIX=${2:-/opt/arm-tools}
 
 echo "Using toolchain prefix " $TOOLCHAIN_PREFIX
 export CPP=${TOOLCHAIN_PREFIX}-cpp
