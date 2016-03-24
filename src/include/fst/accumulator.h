@@ -23,9 +23,17 @@
 
 #include <algorithm>
 #include <functional>
+
+#ifdef CC_CLANG
+#include <unordered_map>
+using std::unordered_map;
+using std::unordered_multimap;
+#else
 #include <tr1/unordered_map>
 using std::tr1::unordered_map;
 using std::tr1::unordered_multimap;
+#endif
+
 #include <vector>
 using std::vector;
 

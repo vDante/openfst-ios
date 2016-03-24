@@ -21,10 +21,15 @@
 #ifndef FST_LIB_EPSNORMALIZE_H__
 #define FST_LIB_EPSNORMALIZE_H__
 
+#ifdef CC_CLANG
+#include <unordered_map>
+using std::unordered_map;
+using std::unordered_multimap;
+#else
 #include <tr1/unordered_map>
 using std::tr1::unordered_map;
 using std::tr1::unordered_multimap;
-
+#endif
 
 #include <fst/factor-weight.h>
 #include <fst/invert.h>

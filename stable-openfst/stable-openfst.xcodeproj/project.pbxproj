@@ -15,15 +15,17 @@
 		5467AAE21CA04CF20001A6B1 /* symbol-table-ops.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5467AAD91CA04CF20001A6B1 /* symbol-table-ops.cc */; settings = {ASSET_TAGS = (); }; };
 		5467AAE31CA04CF20001A6B1 /* symbol-table.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5467AADA1CA04CF20001A6B1 /* symbol-table.cc */; settings = {ASSET_TAGS = (); }; };
 		5467AAE41CA04CF20001A6B1 /* util.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5467AADB1CA04CF20001A6B1 /* util.cc */; settings = {ASSET_TAGS = (); }; };
+		5467CB711CA432170001A6B1 /* fst in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5467AA9C1CA042D00001A6B1 /* fst */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		5467AA8D1CA0427A0001A6B1 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
+			dstPath = "/usr/local/ios-includes";
+			dstSubfolderSpec = 0;
 			files = (
+				5467CB711CA432170001A6B1 /* fst in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,10 +60,10 @@
 			children = (
 				5467AA9B1CA042960001A6B1 /* include */,
 				5467AAB91CA04AC80001A6B1 /* src */,
-				5467AA911CA0427A0001A6B1 /* stable-openfst */,
 				5467AA901CA0427A0001A6B1 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		5467AA901CA0427A0001A6B1 /* Products */ = {
 			isa = PBXGroup;
@@ -69,13 +71,6 @@
 				5467AA8F1CA0427A0001A6B1 /* libstable-openfst.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		5467AA911CA0427A0001A6B1 /* stable-openfst */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "stable-openfst";
 			sourceTree = "<group>";
 		};
 		5467AA9B1CA042960001A6B1 /* include */ = {
@@ -260,9 +255,13 @@
 		5467AA991CA0427A0001A6B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_PREPROCESSOR_DEFINITIONS = CC_CLANG;
 				"HEADER_SEARCH_PATHS[arch=*]" = ../src/include;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"std=c++11",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -271,9 +270,13 @@
 		5467AA9A1CA0427A0001A6B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_PREPROCESSOR_DEFINITIONS = CC_CLANG;
 				"HEADER_SEARCH_PATHS[arch=*]" = ../src/include;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"std=c++11",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -298,6 +301,7 @@
 				5467AA9A1CA0427A0001A6B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

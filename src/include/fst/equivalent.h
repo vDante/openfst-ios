@@ -24,9 +24,16 @@
 #include <algorithm>
 #include <deque>
 using std::deque;
+#ifdef CC_CLANG
+#include <unordered_map>
+using std::unordered_map;
+using std::unordered_multimap;
+#else
+
 #include <tr1/unordered_map>
 using std::tr1::unordered_map;
 using std::tr1::unordered_multimap;
+#endif
 #include <utility>
 using std::pair; using std::make_pair;
 #include <vector>

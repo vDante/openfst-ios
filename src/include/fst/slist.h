@@ -22,7 +22,7 @@
 
 #include <fst/config.h>
 
-#ifdef HAVE___GNU_CXX__SLIST_INT_
+#if defined(HAVE___GNU_CXX__SLIST_INT_) && ! defined(CC_CLANG)
 
 #include <ext/slist>
 

@@ -25,12 +25,22 @@
 
 #include <vector>
 using std::vector;
+#ifdef CC_CLANG
+#include <unordered_map>
+using std::unordered_map;
+using std::unordered_multimap;
+#include <unordered_set>
+using std::unordered_set;
+using std::unordered_multiset;
+#else
 #include <tr1/unordered_map>
 using std::tr1::unordered_map;
 using std::tr1::unordered_multimap;
 #include <tr1/unordered_set>
 using std::tr1::unordered_set;
 using std::tr1::unordered_multiset;
+#endif
+
 #include <map>
 
 #include <fst/connect.h>
