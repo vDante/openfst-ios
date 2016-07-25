@@ -20,15 +20,10 @@
 #include <vector>
 using std::vector;
 #include <string>
-#ifdef CC_CLANG
 #include <unordered_set>
 using std::unordered_set;
 using std::unordered_multiset;
-#else
-#include <tr1/unordered_set>
-using std::tr1::unordered_set;
-using std::tr1::unordered_multiset;
-#endif
+
 
 #include <fst/fst.h>
 #include <fst/symbol-table.h>

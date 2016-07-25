@@ -1,5 +1,16 @@
 *~
 *.DS_Store
+
+*.o
+*.lo
+*.la
+.deps
+.libs
+config.*
+Makefile
+stamp-*
+libtool
+
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore

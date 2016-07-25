@@ -25,15 +25,10 @@ using std::vector;
 
 #include <fst/cache.h>
 
-#ifdef CC_CLANG
 #include <unordered_map>
 using std::unordered_map;
 using std::unordered_multimap;
-#else
-#include <tr1/unordered_map>
-using std::tr1::unordered_map;
-using std::tr1::unordered_multimap;
-#endif
+
 namespace fst {
 
 // The EditFst class enables non-destructive edit operations on a wrapped

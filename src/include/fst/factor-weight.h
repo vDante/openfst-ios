@@ -22,15 +22,9 @@
 #define FST_LIB_FACTOR_WEIGHT_H__
 
 #include <algorithm>
-#ifdef CC_CLANG
 #include <unordered_map>
 using std::unordered_map;
 using std::unordered_multimap;
-#else
-#include <tr1/unordered_map>
-using std::tr1::unordered_map;
-using std::tr1::unordered_multimap;
-#endif
 #include <string>
 #include <utility>
 using std::pair; using std::make_pair;
@@ -128,27 +122,27 @@ class StringFactor {
 
 
 // Factor a GallicWeight using StringFactor.
-template <class L, class W, StringType S = STRING_LEFT>
+template <class L, class W, GallicType G = GALLIC_LEFT>
 class GallicFactor {
  public:
-  GallicFactor(const GallicWeight<L, W, S> &w)
+  GallicFactor(const GallicWeight<L, W, G> &w)
       : weight_(w), done_(w.Value1().Size() <= 1) {}
 
   bool Done() const { return done_; }
 
   void Next() { done_ = true; }
 
-  pair< GallicWeight<L, W, S>, GallicWeight<L, W, S> > Value() const {
-    StringFactor<L, S> iter(weight_.Value1());
-    GallicWeight<L, W, S> w1(iter.Value().first, weight_.Value2());
-    GallicWeight<L, W, S> w2(iter.Value().second, W::One());
+  pair< GallicWeight<L, W, G>, GallicWeight<L, W, G> > Value() const {
+    StringFactor<L, GALLIC_STRING_TYPE(G)> iter(weight_.Value1());
+    GallicWeight<L, W, G> w1(iter.Value().first, weight_.Value2());
+    GallicWeight<L, W, G> w2(iter.Value().second, W::One());
     return make_pair(w1, w2);
   }
 
   void Reset() { done_ = weight_.Value1().Size() <= 1; }
 
  private:
-  GallicWeight<L, W, S> weight_;
+  GallicWeight<L, W, G> weight_;
   bool done_;
 };
 
@@ -410,7 +404,8 @@ class FactorWeightFst : public ImplToFst< FactorWeightFstImpl<A, F> > {
   typedef A Arc;
   typedef typename A::Weight Weight;
   typedef typename A::StateId StateId;
-  typedef CacheState<A> State;
+  typedef DefaultCacheStore<A> Store;
+  typedef typename Store::State State;
   typedef FactorWeightFstImpl<A, F> Impl;
 
   FactorWeightFst(const Fst<A> &fst)

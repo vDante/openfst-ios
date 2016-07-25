@@ -21,15 +21,9 @@
 #ifndef FST_LIB_RMFINALEPSILON_H__
 #define FST_LIB_RMFINALEPSILON_H__
 
-#ifdef CC_CLANG
 #include <unordered_set>
 using std::unordered_set;
 using std::unordered_multiset;
-#else
-#include <tr1/unordered_set>
-using std::tr1::unordered_set;
-using std::tr1::unordered_multiset;
-#endif
 #include <vector>
 using std::vector;
 

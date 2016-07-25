@@ -22,27 +22,12 @@
 #define FST_LIB_SYNCHRONIZE_H__
 
 #include <algorithm>
-
-#ifdef CC_CLANG
-
 #include <unordered_map>
 using std::unordered_map;
 using std::unordered_multimap;
 #include <unordered_set>
 using std::unordered_set;
 using std::unordered_multiset;
-
-#else
-
-#include <tr1/unordered_map>
-using std::tr1::unordered_map;
-using std::tr1::unordered_multimap;
-#include <tr1/unordered_map>
-using std::tr1::unordered_map;
-using std::tr1::unordered_multimap;
-
-#endif
-
 #include <string>
 #include <utility>
 using std::pair; using std::make_pair;
@@ -374,7 +359,8 @@ class SynchronizeFst : public ImplToFst< SynchronizeFstImpl<A> > {
   typedef A Arc;
   typedef typename A::Weight Weight;
   typedef typename A::StateId StateId;
-  typedef CacheState<A> State;
+  typedef DefaultCacheStore<A> Store;
+  typedef typename Store::State State;
   typedef SynchronizeFstImpl<A> Impl;
 
   SynchronizeFst(const Fst<A> &fst)

@@ -22,15 +22,9 @@
 #define FST_LIB_ENCODE_H__
 
 #include <climits>
-#ifdef CC_CLANG
 #include <unordered_map>
 using std::unordered_map;
 using std::unordered_multimap;
-#else
-#include <tr1/unordered_map>
-using std::tr1::unordered_map;
-using std::tr1::unordered_multimap;
-#endif
 #include <string>
 #include <vector>
 using std::vector;
@@ -176,7 +170,7 @@ template <class A>  class EncodeTable {
 
   static EncodeTable<A> *Read(istream &strm, const string &source);
 
-  const uint32 flags() const { return flags_ & kEncodeFlags; }
+  uint32 flags() const { return flags_ & kEncodeFlags; }
 
   int RefCount() const { return ref_count_.count(); }
   int IncrRefCount() { return ref_count_.Incr(); }
@@ -365,8 +359,8 @@ template <class A> class EncodeMapper {
     return outprops & mask;
   }
 
-  const uint32 flags() const { return flags_; }
-  const EncodeType type() const { return type_; }
+  uint32 flags() const { return flags_; }
+  EncodeType type() const { return type_; }
   const EncodeTable<A> &table() const { return *table_; }
 
   bool Write(ostream &strm, const string& source) {
@@ -418,7 +412,7 @@ template <class A> class EncodeMapper {
   bool error_;
 
   explicit EncodeMapper(uint32 flags, EncodeType type, EncodeTable<A> *table)
-      : flags_(flags), type_(type), table_(table) {}
+      : flags_(flags), type_(type), table_(table), error_(false) {}
   void operator=(const EncodeMapper &);  // Disallow.
 };
 
