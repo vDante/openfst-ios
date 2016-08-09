@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5467AADC1CA04CF20001A6B1 /* compat.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5467AAD01CA04CF20001A6B1 /* compat.cc */; settings = {ASSET_TAGS = (); }; };
-		5467AADD1CA04CF20001A6B1 /* flags.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5467AAD21CA04CF20001A6B1 /* flags.cc */; settings = {ASSET_TAGS = (); }; };
-		5467AADE1CA04CF20001A6B1 /* fst.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5467AAD31CA04CF20001A6B1 /* fst.cc */; settings = {ASSET_TAGS = (); }; };
-		5467AAE01CA04CF20001A6B1 /* mapped-file.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5467AAD71CA04CF20001A6B1 /* mapped-file.cc */; settings = {ASSET_TAGS = (); }; };
-		5467AAE11CA04CF20001A6B1 /* properties.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5467AAD81CA04CF20001A6B1 /* properties.cc */; settings = {ASSET_TAGS = (); }; };
-		5467AAE21CA04CF20001A6B1 /* symbol-table-ops.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5467AAD91CA04CF20001A6B1 /* symbol-table-ops.cc */; settings = {ASSET_TAGS = (); }; };
-		5467AAE31CA04CF20001A6B1 /* symbol-table.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5467AADA1CA04CF20001A6B1 /* symbol-table.cc */; settings = {ASSET_TAGS = (); }; };
-		5467AAE41CA04CF20001A6B1 /* util.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5467AADB1CA04CF20001A6B1 /* util.cc */; settings = {ASSET_TAGS = (); }; };
 		5467CB711CA432170001A6B1 /* fst in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5467AA9C1CA042D00001A6B1 /* fst */; };
+		8F67E3C61D59E0D6001233DC /* compat.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8F67E3BE1D59E0D6001233DC /* compat.cc */; };
+		8F67E3C71D59E0D6001233DC /* flags.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8F67E3BF1D59E0D6001233DC /* flags.cc */; };
+		8F67E3C81D59E0D6001233DC /* fst.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8F67E3C01D59E0D6001233DC /* fst.cc */; };
+		8F67E3C91D59E0D6001233DC /* mapped-file.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8F67E3C11D59E0D6001233DC /* mapped-file.cc */; };
+		8F67E3CA1D59E0D6001233DC /* properties.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8F67E3C21D59E0D6001233DC /* properties.cc */; };
+		8F67E3CB1D59E0D6001233DC /* symbol-table-ops.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8F67E3C31D59E0D6001233DC /* symbol-table-ops.cc */; };
+		8F67E3CC1D59E0D6001233DC /* symbol-table.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8F67E3C41D59E0D6001233DC /* symbol-table.cc */; };
+		8F67E3CD1D59E0D6001233DC /* util.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8F67E3C51D59E0D6001233DC /* util.cc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,14 +34,14 @@
 /* Begin PBXFileReference section */
 		5467AA8F1CA0427A0001A6B1 /* libstable-openfst.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libstable-openfst.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5467AA9C1CA042D00001A6B1 /* fst */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fst; path = ../src/include/fst; sourceTree = "<group>"; };
-		5467AAD01CA04CF20001A6B1 /* compat.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = compat.cc; sourceTree = "<group>"; };
-		5467AAD21CA04CF20001A6B1 /* flags.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = flags.cc; sourceTree = "<group>"; };
-		5467AAD31CA04CF20001A6B1 /* fst.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fst.cc; sourceTree = "<group>"; };
-		5467AAD71CA04CF20001A6B1 /* mapped-file.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "mapped-file.cc"; sourceTree = "<group>"; };
-		5467AAD81CA04CF20001A6B1 /* properties.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = properties.cc; sourceTree = "<group>"; };
-		5467AAD91CA04CF20001A6B1 /* symbol-table-ops.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "symbol-table-ops.cc"; sourceTree = "<group>"; };
-		5467AADA1CA04CF20001A6B1 /* symbol-table.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "symbol-table.cc"; sourceTree = "<group>"; };
-		5467AADB1CA04CF20001A6B1 /* util.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = util.cc; sourceTree = "<group>"; };
+		8F67E3BE1D59E0D6001233DC /* compat.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = compat.cc; path = ../src/lib/compat.cc; sourceTree = "<group>"; };
+		8F67E3BF1D59E0D6001233DC /* flags.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = flags.cc; path = ../src/lib/flags.cc; sourceTree = "<group>"; };
+		8F67E3C01D59E0D6001233DC /* fst.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fst.cc; path = ../src/lib/fst.cc; sourceTree = "<group>"; };
+		8F67E3C11D59E0D6001233DC /* mapped-file.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "mapped-file.cc"; path = "../src/lib/mapped-file.cc"; sourceTree = "<group>"; };
+		8F67E3C21D59E0D6001233DC /* properties.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = properties.cc; path = ../src/lib/properties.cc; sourceTree = "<group>"; };
+		8F67E3C31D59E0D6001233DC /* symbol-table-ops.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "symbol-table-ops.cc"; path = "../src/lib/symbol-table-ops.cc"; sourceTree = "<group>"; };
+		8F67E3C41D59E0D6001233DC /* symbol-table.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "symbol-table.cc"; path = "../src/lib/symbol-table.cc"; sourceTree = "<group>"; };
+		8F67E3C51D59E0D6001233DC /* util.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = util.cc; path = ../src/lib/util.cc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,14 +92,14 @@
 		5467AABA1CA04AD50001A6B1 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				5467AAD01CA04CF20001A6B1 /* compat.cc */,
-				5467AAD21CA04CF20001A6B1 /* flags.cc */,
-				5467AAD31CA04CF20001A6B1 /* fst.cc */,
-				5467AAD71CA04CF20001A6B1 /* mapped-file.cc */,
-				5467AAD81CA04CF20001A6B1 /* properties.cc */,
-				5467AAD91CA04CF20001A6B1 /* symbol-table-ops.cc */,
-				5467AADA1CA04CF20001A6B1 /* symbol-table.cc */,
-				5467AADB1CA04CF20001A6B1 /* util.cc */,
+				8F67E3BE1D59E0D6001233DC /* compat.cc */,
+				8F67E3BF1D59E0D6001233DC /* flags.cc */,
+				8F67E3C01D59E0D6001233DC /* fst.cc */,
+				8F67E3C11D59E0D6001233DC /* mapped-file.cc */,
+				8F67E3C21D59E0D6001233DC /* properties.cc */,
+				8F67E3C31D59E0D6001233DC /* symbol-table-ops.cc */,
+				8F67E3C41D59E0D6001233DC /* symbol-table.cc */,
+				8F67E3C51D59E0D6001233DC /* util.cc */,
 			);
 			name = lib;
 			sourceTree = "<group>";
@@ -160,14 +160,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5467AAE21CA04CF20001A6B1 /* symbol-table-ops.cc in Sources */,
-				5467AADE1CA04CF20001A6B1 /* fst.cc in Sources */,
-				5467AAE01CA04CF20001A6B1 /* mapped-file.cc in Sources */,
-				5467AAE11CA04CF20001A6B1 /* properties.cc in Sources */,
-				5467AADC1CA04CF20001A6B1 /* compat.cc in Sources */,
-				5467AAE41CA04CF20001A6B1 /* util.cc in Sources */,
-				5467AAE31CA04CF20001A6B1 /* symbol-table.cc in Sources */,
-				5467AADD1CA04CF20001A6B1 /* flags.cc in Sources */,
+				8F67E3C61D59E0D6001233DC /* compat.cc in Sources */,
+				8F67E3CA1D59E0D6001233DC /* properties.cc in Sources */,
+				8F67E3C81D59E0D6001233DC /* fst.cc in Sources */,
+				8F67E3CB1D59E0D6001233DC /* symbol-table-ops.cc in Sources */,
+				8F67E3C91D59E0D6001233DC /* mapped-file.cc in Sources */,
+				8F67E3CD1D59E0D6001233DC /* util.cc in Sources */,
+				8F67E3C71D59E0D6001233DC /* flags.cc in Sources */,
+				8F67E3CC1D59E0D6001233DC /* symbol-table.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
