@@ -172,10 +172,11 @@ void ArcMap(MutableFst<A> *fst, C* mapper) {
         if (s != superfinal) {
           A final_arc = (*mapper)(A(0, 0, fst->Final(s), kNoStateId));
           if (final_arc.ilabel != 0 || final_arc.olabel != 0 ||
-              final_arc.weight != Weight::Zero())
+              final_arc.weight != Weight::Zero()) {
             fst->AddArc(s, A(final_arc.ilabel, final_arc.olabel,
                              final_arc.weight, superfinal));
-            fst->SetFinal(s, Weight::Zero());
+          }
+          fst->SetFinal(s, Weight::Zero());
         }
         break;
       }
