@@ -11,6 +11,15 @@ Makefile
 stamp-*
 libtool
 
+src/bin
+autom4te.cache/
+src/extensions/far/farcompilestrings
+src/extensions/far/farcreate
+src/extensions/far/farequal
+src/extensions/far/farextract
+src/extensions/far/farinfo
+src/extensions/far/farprintstrings
+
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
