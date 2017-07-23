@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5467CB711CA432170001A6B1 /* fst in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5467AA9C1CA042D00001A6B1 /* fst */; };
 		8F67E3C61D59E0D6001233DC /* compat.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8F67E3BE1D59E0D6001233DC /* compat.cc */; };
 		8F67E3C71D59E0D6001233DC /* flags.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8F67E3BF1D59E0D6001233DC /* flags.cc */; };
 		8F67E3C81D59E0D6001233DC /* fst.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8F67E3C01D59E0D6001233DC /* fst.cc */; };
@@ -22,10 +21,8 @@
 		5467AA8D1CA0427A0001A6B1 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "/usr/local/ios-includes";
 			dstSubfolderSpec = 0;
 			files = (
-				5467CB711CA432170001A6B1 /* fst in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
