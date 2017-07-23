@@ -29,7 +29,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5467AA8F1CA0427A0001A6B1 /* libstable-openfst.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libstable-openfst.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5467AA8F1CA0427A0001A6B1 /* libopenfst-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libopenfst-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5467AA9C1CA042D00001A6B1 /* fst */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fst; path = ../src/include/fst; sourceTree = "<group>"; };
 		8F67E3BE1D59E0D6001233DC /* compat.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = compat.cc; path = ../src/lib/compat.cc; sourceTree = "<group>"; };
 		8F67E3BF1D59E0D6001233DC /* flags.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = flags.cc; path = ../src/lib/flags.cc; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 		5467AA901CA0427A0001A6B1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5467AA8F1CA0427A0001A6B1 /* libstable-openfst.a */,
+				5467AA8F1CA0427A0001A6B1 /* libopenfst-ios.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,9 +104,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5467AA8E1CA0427A0001A6B1 /* stable-openfst */ = {
+		5467AA8E1CA0427A0001A6B1 /* openfst-ios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5467AA981CA0427A0001A6B1 /* Build configuration list for PBXNativeTarget "stable-openfst" */;
+			buildConfigurationList = 5467AA981CA0427A0001A6B1 /* Build configuration list for PBXNativeTarget "openfst-ios" */;
 			buildPhases = (
 				5467AA8B1CA0427A0001A6B1 /* Sources */,
 				5467AA8C1CA0427A0001A6B1 /* Frameworks */,
@@ -116,9 +116,9 @@
 			);
 			dependencies = (
 			);
-			name = "stable-openfst";
-			productName = "stable-openfst";
-			productReference = 5467AA8F1CA0427A0001A6B1 /* libstable-openfst.a */;
+			name = "openfst-ios";
+			productName = "openfst-ios";
+			productReference = 5467AA8F1CA0427A0001A6B1 /* libopenfst-ios.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -135,7 +135,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5467AA8A1CA0427A0001A6B1 /* Build configuration list for PBXProject "stable-openfst" */;
+			buildConfigurationList = 5467AA8A1CA0427A0001A6B1 /* Build configuration list for PBXProject "openfst-ios" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -147,7 +147,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5467AA8E1CA0427A0001A6B1 /* stable-openfst */,
+				5467AA8E1CA0427A0001A6B1 /* openfst-ios */,
 			);
 		};
 /* End PBXProject section */
@@ -282,7 +282,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5467AA8A1CA0427A0001A6B1 /* Build configuration list for PBXProject "stable-openfst" */ = {
+		5467AA8A1CA0427A0001A6B1 /* Build configuration list for PBXProject "openfst-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5467AA961CA0427A0001A6B1 /* Debug */,
@@ -291,7 +291,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5467AA981CA0427A0001A6B1 /* Build configuration list for PBXNativeTarget "stable-openfst" */ = {
+		5467AA981CA0427A0001A6B1 /* Build configuration list for PBXNativeTarget "openfst-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5467AA991CA0427A0001A6B1 /* Debug */,
