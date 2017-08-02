@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		498EC8611F31995300A168E2 /* weight.cc in Sources */ = {isa = PBXBuildFile; fileRef = 498EC8601F31995300A168E2 /* weight.cc */; };
 		8F67E3C61D59E0D6001233DC /* compat.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8F67E3BE1D59E0D6001233DC /* compat.cc */; };
 		8F67E3C71D59E0D6001233DC /* flags.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8F67E3BF1D59E0D6001233DC /* flags.cc */; };
 		8F67E3C81D59E0D6001233DC /* fst.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8F67E3C01D59E0D6001233DC /* fst.cc */; };
@@ -29,6 +30,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		498EC8601F31995300A168E2 /* weight.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = weight.cc; path = ../src/lib/weight.cc; sourceTree = "<group>"; };
 		5467AA8F1CA0427A0001A6B1 /* libopenfst-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libopenfst-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5467AA9C1CA042D00001A6B1 /* fst */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fst; path = ../src/include/fst; sourceTree = "<group>"; };
 		8F67E3BE1D59E0D6001233DC /* compat.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = compat.cc; path = ../src/lib/compat.cc; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				8F67E3C31D59E0D6001233DC /* symbol-table-ops.cc */,
 				8F67E3C41D59E0D6001233DC /* symbol-table.cc */,
 				8F67E3C51D59E0D6001233DC /* util.cc */,
+				498EC8601F31995300A168E2 /* weight.cc */,
 			);
 			name = lib;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			files = (
 				8F67E3C61D59E0D6001233DC /* compat.cc in Sources */,
 				8F67E3CA1D59E0D6001233DC /* properties.cc in Sources */,
+				498EC8611F31995300A168E2 /* weight.cc in Sources */,
 				8F67E3C81D59E0D6001233DC /* fst.cc in Sources */,
 				8F67E3CB1D59E0D6001233DC /* symbol-table-ops.cc in Sources */,
 				8F67E3C91D59E0D6001233DC /* mapped-file.cc in Sources */,
